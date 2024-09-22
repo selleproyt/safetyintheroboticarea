@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность на роботизированном участке</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img align="left" src="/static/img/logo.svg">
+        <h1 align="right">Безопасность на роботизированном участке</h1>
+    </header>
+    <section id="login" align="center">
+    {% if dlp == 0  %}
+        <p class="gre">Нарушений не обнаружено!</p>
+    {% else %}
+        <p class="re">Выявлено нарушений : {{dlp}}</p>
+        {% for elem in problems %}
+        <p class="problem">{{elem}}</p>
+       {% endfor%}
+    {% endif  %}
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Челябинский кузнечно-прессовый завод </p>
+    </footer>
+
+</body>
+</html>

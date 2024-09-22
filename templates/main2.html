@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность на роботизированном участке</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <img align="left" src="/static/img/logo.svg">
+        <h1 align="right">Безопасность на роботизированном участке</h1>
+    </header>
+    <section id="login" align="center">
+    <form method="POST" action="/submitnetwork" enctype="multipart/form-data">
+                <label for="video">Загрузите видео для выявления нарушений</label>
+                <input type="file" id="video" name="video">
+                <br>
+                <input type="submit" value="Submit"/>
+    </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Челябинский кузнечно-прессовый завод </p>
+    </footer>
+
+</body>
+</html>
